@@ -170,17 +170,3 @@ func clockTime(secs: Int) -> String {
     
     return "\(h):\(m):\(s)"
 }
-
-func toClock(secs: Int) -> (secs: Int, mins: Int, hours: Int) {
-    let h = secs / 3600
-    let m = secs % 3600 / 60
-    let s = secs % 36000 % 60
-    return (secs: s, mins: m, hours: h)
-}
-
-func minToClock(mins: Int) -> (mins: Int, hours: Int) {
-    let secs = mins * 60
-    let m = secs / 3600
-    let h = secs % 3600 / 60
-    return (mins: m, hours: h)
-}

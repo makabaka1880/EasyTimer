@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		77309EF8289F6DD300111063 /* Sunshine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 77309EF6289F6DCC00111063 /* Sunshine.m4a */; };
 		77309EFA289FFE6300111063 /* Sunshine.m4a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77309EF6289F6DCC00111063 /* Sunshine.m4a */; };
-		77309EFC28A00FE500111063 /* ClockParses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFB28A00FE500111063 /* ClockParses.swift */; };
-		77309EFD28A00FE500111063 /* ClockParses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFB28A00FE500111063 /* ClockParses.swift */; };
-		77309EFF28A0731B00111063 /* AppStorageRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFE28A0731B00111063 /* AppStorageRules.swift */; };
-		77309F0028A0731B00111063 /* AppStorageRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFE28A0731B00111063 /* AppStorageRules.swift */; };
 		77352099289F574800506E5C /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77352098289F574800506E5C /* BellView.swift */; };
 		7735209A289F574800506E5C /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77352098289F574800506E5C /* BellView.swift */; };
 		7735209C289F576B00506E5C /* RingTones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7735209B289F576B00506E5C /* RingTones.swift */; };
@@ -42,8 +38,6 @@
 
 /* Begin PBXFileReference section */
 		77309EF6289F6DCC00111063 /* Sunshine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunshine.m4a; sourceTree = "<group>"; };
-		77309EFB28A00FE500111063 /* ClockParses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockParses.swift; sourceTree = "<group>"; };
-		77309EFE28A0731B00111063 /* AppStorageRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageRules.swift; sourceTree = "<group>"; };
 		77352098289F574800506E5C /* BellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellView.swift; sourceTree = "<group>"; };
 		7735209B289F576B00506E5C /* RingTones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingTones.swift; sourceTree = "<group>"; };
 		77713931289EA33B002CE2EE /* EasyTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimerApp.swift; sourceTree = "<group>"; };
@@ -94,9 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				77713931289EA33B002CE2EE /* EasyTimerApp.swift */,
-				77309EFB28A00FE500111063 /* ClockParses.swift */,
 				77713932289EA33B002CE2EE /* ContentView.swift */,
-				77309EFE28A0731B00111063 /* AppStorageRules.swift */,
 				77352098289F574800506E5C /* BellView.swift */,
 				7735209B289F576B00506E5C /* RingTones.swift */,
 				7771394F289EAE26002CE2EE /* TimerView.swift */,
@@ -226,9 +218,7 @@
 				77713950289EAE26002CE2EE /* TimerView.swift in Sources */,
 				7735209C289F576B00506E5C /* RingTones.swift in Sources */,
 				77713943289EA33C002CE2EE /* ContentView.swift in Sources */,
-				77309EFF28A0731B00111063 /* AppStorageRules.swift in Sources */,
 				77713941289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
-				77309EFC28A00FE500111063 /* ClockParses.swift in Sources */,
 				77352099289F574800506E5C /* BellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,9 +230,7 @@
 				77713951289EAE26002CE2EE /* TimerView.swift in Sources */,
 				7735209D289F576B00506E5C /* RingTones.swift in Sources */,
 				77713944289EA33C002CE2EE /* ContentView.swift in Sources */,
-				77309F0028A0731B00111063 /* AppStorageRules.swift in Sources */,
 				77713942289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
-				77309EFD28A00FE500111063 /* ClockParses.swift in Sources */,
 				7735209A289F574800506E5C /* BellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
