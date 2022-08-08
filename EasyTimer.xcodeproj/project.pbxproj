@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77309EF8289F6DD300111063 /* Sunshine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 77309EF6289F6DCC00111063 /* Sunshine.m4a */; };
+		77309EFA289FFE6300111063 /* Sunshine.m4a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77309EF6289F6DCC00111063 /* Sunshine.m4a */; };
+		77309EFC28A00FE500111063 /* ClockParses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFB28A00FE500111063 /* ClockParses.swift */; };
+		77309EFD28A00FE500111063 /* ClockParses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFB28A00FE500111063 /* ClockParses.swift */; };
+		77309EFF28A0731B00111063 /* AppStorageRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFE28A0731B00111063 /* AppStorageRules.swift */; };
+		77309F0028A0731B00111063 /* AppStorageRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77309EFE28A0731B00111063 /* AppStorageRules.swift */; };
+		77352099289F574800506E5C /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77352098289F574800506E5C /* BellView.swift */; };
+		7735209A289F574800506E5C /* BellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77352098289F574800506E5C /* BellView.swift */; };
+		7735209C289F576B00506E5C /* RingTones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7735209B289F576B00506E5C /* RingTones.swift */; };
+		7735209D289F576B00506E5C /* RingTones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7735209B289F576B00506E5C /* RingTones.swift */; };
+		77713941289EA33C002CE2EE /* EasyTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77713931289EA33B002CE2EE /* EasyTimerApp.swift */; };
+		77713942289EA33C002CE2EE /* EasyTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77713931289EA33B002CE2EE /* EasyTimerApp.swift */; };
+		77713943289EA33C002CE2EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77713932289EA33B002CE2EE /* ContentView.swift */; };
+		77713944289EA33C002CE2EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77713932289EA33B002CE2EE /* ContentView.swift */; };
+		77713945289EA33C002CE2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77713933289EA33C002CE2EE /* Assets.xcassets */; };
+		77713946289EA33C002CE2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77713933289EA33C002CE2EE /* Assets.xcassets */; };
+		77713950289EAE26002CE2EE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771394F289EAE26002CE2EE /* TimerView.swift */; };
+		77713951289EAE26002CE2EE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771394F289EAE26002CE2EE /* TimerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77309EF9289FFE5300111063 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				77309EFA289FFE6300111063 /* Sunshine.m4a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77309EF6289F6DCC00111063 /* Sunshine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sunshine.m4a; sourceTree = "<group>"; };
+		77309EFB28A00FE500111063 /* ClockParses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockParses.swift; sourceTree = "<group>"; };
+		77309EFE28A0731B00111063 /* AppStorageRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageRules.swift; sourceTree = "<group>"; };
+		77352098289F574800506E5C /* BellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellView.swift; sourceTree = "<group>"; };
+		7735209B289F576B00506E5C /* RingTones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingTones.swift; sourceTree = "<group>"; };
+		77713931289EA33B002CE2EE /* EasyTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimerApp.swift; sourceTree = "<group>"; };
+		77713932289EA33B002CE2EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77713933289EA33C002CE2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77713938289EA33C002CE2EE /* EasyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7771393E289EA33C002CE2EE /* EasyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77713940289EA33C002CE2EE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		7771394F289EAE26002CE2EE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77713935289EA33C002CE2EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7771393B289EA33C002CE2EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		773520A1289F5D7A00506E5C /* RingToneAudios */ = {
+			isa = PBXGroup;
+			children = (
+				77309EF6289F6DCC00111063 /* Sunshine.m4a */,
+			);
+			path = RingToneAudios;
+			sourceTree = "<group>";
+		};
+		7771392B289EA33B002CE2EE = {
+			isa = PBXGroup;
+			children = (
+				77713930289EA33B002CE2EE /* Shared */,
+				7771393F289EA33C002CE2EE /* macOS */,
+				77713939289EA33C002CE2EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77713930289EA33B002CE2EE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				77713931289EA33B002CE2EE /* EasyTimerApp.swift */,
+				77309EFB28A00FE500111063 /* ClockParses.swift */,
+				77713932289EA33B002CE2EE /* ContentView.swift */,
+				77309EFE28A0731B00111063 /* AppStorageRules.swift */,
+				77352098289F574800506E5C /* BellView.swift */,
+				7735209B289F576B00506E5C /* RingTones.swift */,
+				7771394F289EAE26002CE2EE /* TimerView.swift */,
+				773520A1289F5D7A00506E5C /* RingToneAudios */,
+				77713933289EA33C002CE2EE /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		77713939289EA33C002CE2EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77713938289EA33C002CE2EE /* EasyTimer.app */,
+				7771393E289EA33C002CE2EE /* EasyTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7771393F289EA33C002CE2EE /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				77713940289EA33C002CE2EE /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77713937289EA33C002CE2EE /* EasyTimer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (iOS)" */;
+			buildPhases = (
+				77713934289EA33C002CE2EE /* Sources */,
+				77713935289EA33C002CE2EE /* Frameworks */,
+				77713936289EA33C002CE2EE /* Resources */,
+				77309EF9289FFE5300111063 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyTimer (iOS)";
+			productName = "EasyTimer (iOS)";
+			productReference = 77713938289EA33C002CE2EE /* EasyTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7771393D289EA33C002CE2EE /* EasyTimer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (macOS)" */;
+			buildPhases = (
+				7771393A289EA33C002CE2EE /* Sources */,
+				7771393B289EA33C002CE2EE /* Frameworks */,
+				7771393C289EA33C002CE2EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyTimer (macOS)";
+			productName = "EasyTimer (macOS)";
+			productReference = 7771393E289EA33C002CE2EE /* EasyTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7771392C289EA33B002CE2EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					77713937289EA33C002CE2EE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					7771393D289EA33C002CE2EE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "EasyTimer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7771392B289EA33B002CE2EE;
+			productRefGroup = 77713939289EA33C002CE2EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77713937289EA33C002CE2EE /* EasyTimer (iOS) */,
+				7771393D289EA33C002CE2EE /* EasyTimer (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77713936289EA33C002CE2EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77713945289EA33C002CE2EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7771393C289EA33C002CE2EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77713946289EA33C002CE2EE /* Assets.xcassets in Resources */,
+				77309EF8289F6DD300111063 /* Sunshine.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77713934289EA33C002CE2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77713950289EAE26002CE2EE /* TimerView.swift in Sources */,
+				7735209C289F576B00506E5C /* RingTones.swift in Sources */,
+				77713943289EA33C002CE2EE /* ContentView.swift in Sources */,
+				77309EFF28A0731B00111063 /* AppStorageRules.swift in Sources */,
+				77713941289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
+				77309EFC28A00FE500111063 /* ClockParses.swift in Sources */,
+				77352099289F574800506E5C /* BellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7771393A289EA33C002CE2EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77713951289EAE26002CE2EE /* TimerView.swift in Sources */,
+				7735209D289F576B00506E5C /* RingTones.swift in Sources */,
+				77713944289EA33C002CE2EE /* ContentView.swift in Sources */,
+				77309F0028A0731B00111063 /* AppStorageRules.swift in Sources */,
+				77713942289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
+				77309EFD28A00FE500111063 /* ClockParses.swift in Sources */,
+				7735209A289F574800506E5C /* BellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		77713947289EA33C002CE2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77713948289EA33C002CE2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7771394A289EA33C002CE2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Default;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4TK6FX4PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
+				PRODUCT_NAME = EasyTimer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7771394B289EA33C002CE2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Default;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4TK6FX4PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
+				PRODUCT_NAME = EasyTimer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7771394D289EA33C002CE2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Default;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4TK6FX4PU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
+				PRODUCT_NAME = EasyTimer;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7771394E289EA33C002CE2EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Default;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4TK6FX4PU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
+				PRODUCT_NAME = EasyTimer;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "EasyTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77713947289EA33C002CE2EE /* Debug */,
+				77713948289EA33C002CE2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7771394A289EA33C002CE2EE /* Debug */,
+				7771394B289EA33C002CE2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7771394D289EA33C002CE2EE /* Debug */,
+				7771394E289EA33C002CE2EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7771392C289EA33B002CE2EE /* Project object */;
+}
