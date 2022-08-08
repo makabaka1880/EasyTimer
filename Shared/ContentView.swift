@@ -31,6 +31,8 @@ struct ContentView: View {
                     if startTheTimer {
                         Text("\(clockTime(secs: time - Int(timePassed)))")
                             .font(.system(size: 25, weight: .light, design: .rounded)).fixedSize()
+                        Text("\(clockTime(secs: Int(timePassed)))")
+                            .font(.system(size: 15, weight: .thin, design: .rounded)).fixedSize()
                     }
                     HStack {
                         TextField("Hrs...", text: $cacheHoursString)
