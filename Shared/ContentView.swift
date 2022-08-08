@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var timePassed: Double = 0
     @State var stopped: Bool = false
     @State var startTheTimer: Bool = false
-    @State var recieveUpdate: Bool = true
+    @State var recieveUpdate: Bool = false
     @State var timer: Timer.TimerPublisher = Timer.publish(every: 0.001, on: .main, in: .common)
     @AppStorage("RingTone") var ringtone: RingTones = .none
     @AppStorage("theme") var theme: Themes = .none
@@ -80,24 +80,22 @@ struct ContentView: View {
                             .disabled(startTheTimer)
                     }.fixedSize()
                 }.padding()
-                if !(Int(timePassed) >= time) {
-                    Button {
-                        print("Time \(time)")
-                        withAnimation {
-                            if startTheTimer {
-                                startTheTimer = false
-                                timePassed = 0
-                            } else {
-                                print("schedule", seconds, minutes, hours)
-                                time = seconds + minutes * 60 + hours * 3600
-                                startTheTimer = true
-                                stopped = false
-                            }
+                Button {
+                    print("Time \(time)")
+                    withAnimation {
+                        if startTheTimer {
+                            startTheTimer = false
+                            timePassed = 0
+                        } else {
+                            print("schedule", seconds, minutes, hours)
+                            time = seconds + minutes * 60 + hours * 3600
+                            startTheTimer = true
+                            stopped = false
                         }
-                    } label: {
-                        Label(startTheTimer ? "Stop" : "Start", systemImage: startTheTimer ? "stop.fill" : "clock").foregroundColor(Color(theme.rawValue))
-                    }.buttonStyle(.plain).padding()
-                }
+                    }
+                } label: {
+                    Label(startTheTimer ? "Stop" : "Start", systemImage: startTheTimer ? "stop.fill" : "clock").foregroundColor(Color(theme.rawValue))
+                }.buttonStyle(.plain).padding()
                 if startTheTimer {
                     Button {
                         withAnimation {
@@ -110,13 +108,16 @@ struct ContentView: View {
                         Label(recieveUpdate ? "Pause" : "Continue", systemImage: recieveUpdate ? "pause.fill" : "play.fill").foregroundColor(Color(theme.rawValue))
                     }.buttonStyle(.plain).padding()
                 }
-                if Int(timePassed) >= time {
+                if Int(timePassed)
+                    == time {
                     Button {
                         timePassed = 0
                         stopped = false
                     } label: {
-                        Label("OK", systemImage: "goforward").foregroundColor(Color(theme.rawValue))
-                    }.buttonStyle(.plain).padding()
+                        Label("OK", systemImage: "clock.badge.checkmark.fill").foregroundColor(Color(theme.rawValue))
+                    }.buttonStyle(.plain).padding().task {
+                        print(timePassed, time)
+                    }
                 }
             }
         }.onReceive(timer) { publisher in

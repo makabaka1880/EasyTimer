@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "77713937289EA33C002CE2EE"
-               BuildableName = "EasyTimer.app"
-               BlueprintName = "EasyTimer (iOS)"
-               ReferencedContainer = "container:EasyTimer.xcodeproj">
+               BuildableName = "LightWeightTimer.app"
+               BlueprintName = "LightWeightTimer (iOS)"
+               ReferencedContainer = "container:LightWeightTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "77713937289EA33C002CE2EE"
-            BuildableName = "EasyTimer.app"
-            BlueprintName = "EasyTimer (iOS)"
-            ReferencedContainer = "container:EasyTimer.xcodeproj">
+            BuildableName = "LightWeightTimer.app"
+            BlueprintName = "LightWeightTimer (iOS)"
+            ReferencedContainer = "container:LightWeightTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "77713937289EA33C002CE2EE"
-            BuildableName = "EasyTimer.app"
-            BlueprintName = "EasyTimer (iOS)"
-            ReferencedContainer = "container:EasyTimer.xcodeproj">
+            BuildableName = "LightWeightTimer.app"
+            BlueprintName = "LightWeightTimer (iOS)"
+            ReferencedContainer = "container:LightWeightTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

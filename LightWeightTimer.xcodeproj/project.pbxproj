@@ -49,8 +49,8 @@
 		77713931289EA33B002CE2EE /* EasyTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimerApp.swift; sourceTree = "<group>"; };
 		77713932289EA33B002CE2EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77713933289EA33C002CE2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77713938289EA33C002CE2EE /* EasyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7771393E289EA33C002CE2EE /* EasyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77713938289EA33C002CE2EE /* LightWeightTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightWeightTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7771393E289EA33C002CE2EE /* LightWeightTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightWeightTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77713940289EA33C002CE2EE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		7771394F289EAE26002CE2EE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,8 +109,8 @@
 		77713939289EA33C002CE2EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77713938289EA33C002CE2EE /* EasyTimer.app */,
-				7771393E289EA33C002CE2EE /* EasyTimer.app */,
+				77713938289EA33C002CE2EE /* LightWeightTimer.app */,
+				7771393E289EA33C002CE2EE /* LightWeightTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77713937289EA33C002CE2EE /* EasyTimer (iOS) */ = {
+		77713937289EA33C002CE2EE /* LightWeightTimer (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (iOS)" */;
+			buildConfigurationList = 77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "LightWeightTimer (iOS)" */;
 			buildPhases = (
 				77713934289EA33C002CE2EE /* Sources */,
 				77713935289EA33C002CE2EE /* Frameworks */,
@@ -139,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = "EasyTimer (iOS)";
+			name = "LightWeightTimer (iOS)";
 			productName = "EasyTimer (iOS)";
-			productReference = 77713938289EA33C002CE2EE /* EasyTimer.app */;
+			productReference = 77713938289EA33C002CE2EE /* LightWeightTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7771393D289EA33C002CE2EE /* EasyTimer (macOS) */ = {
+		7771393D289EA33C002CE2EE /* LightWeightTimer (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (macOS)" */;
+			buildConfigurationList = 7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "LightWeightTimer (macOS)" */;
 			buildPhases = (
 				7771393A289EA33C002CE2EE /* Sources */,
 				7771393B289EA33C002CE2EE /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = "EasyTimer (macOS)";
+			name = "LightWeightTimer (macOS)";
 			productName = "EasyTimer (macOS)";
-			productReference = 7771393E289EA33C002CE2EE /* EasyTimer.app */;
+			productReference = 7771393E289EA33C002CE2EE /* LightWeightTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "EasyTimer" */;
+			buildConfigurationList = 7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "LightWeightTimer" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -192,8 +192,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77713937289EA33C002CE2EE /* EasyTimer (iOS) */,
-				7771393D289EA33C002CE2EE /* EasyTimer (macOS) */,
+				77713937289EA33C002CE2EE /* LightWeightTimer (iOS) */,
+				7771393D289EA33C002CE2EE /* LightWeightTimer (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -380,8 +380,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
-				PRODUCT_NAME = EasyTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.LightWeightTimer;
+				PRODUCT_NAME = LightWeightTimer;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -410,8 +410,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
-				PRODUCT_NAME = EasyTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.LightWeightTimer;
+				PRODUCT_NAME = LightWeightTimer;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -433,6 +433,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,8 +441,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
-				PRODUCT_NAME = EasyTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.LightWeightTimer;
+				PRODUCT_NAME = LightWeightTimer;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -461,6 +462,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,8 +470,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.EasyTimer;
-				PRODUCT_NAME = EasyTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makabaka.LightWeightTimer;
+				PRODUCT_NAME = LightWeightTimer;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "EasyTimer" */ = {
+		7771392F289EA33B002CE2EE /* Build configuration list for PBXProject "LightWeightTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77713947289EA33C002CE2EE /* Debug */,
@@ -488,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (iOS)" */ = {
+		77713949289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "LightWeightTimer (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7771394A289EA33C002CE2EE /* Debug */,
@@ -497,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "EasyTimer (macOS)" */ = {
+		7771394C289EA33C002CE2EE /* Build configuration list for PBXNativeTarget "LightWeightTimer (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7771394D289EA33C002CE2EE /* Debug */,
