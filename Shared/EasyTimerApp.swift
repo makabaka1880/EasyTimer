@@ -23,14 +23,32 @@ struct VisualEffect: NSViewRepresentable {
    func updateNSView(_ nsView: NSView, context: Context) { }
 }
 #endif
+struct MainView: View {
+    var body: some View {
+        TabView {
+            ZStack(alignment: .bottomTrailing) {
+                ContentView()
+                BellView()
+            }.tabItem {
+                Label("TimeDown", systemImage: "clock")
+            }
+            StopwatchView().tabItem {
+                Label("StopWatch", systemImage: "stopwatch")
+            }
+        }
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}
 @main
 struct EasyTimerApp: App {
     var body: some Scene {
         WindowGroup {
-            ZStack(alignment: .bottomTrailing) {
-                ContentView()
-                BellView()
-            }
+            MainView()
         }
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)

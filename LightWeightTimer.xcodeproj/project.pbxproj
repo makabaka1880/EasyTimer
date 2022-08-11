@@ -21,6 +21,8 @@
 		77713946289EA33C002CE2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77713933289EA33C002CE2EE /* Assets.xcassets */; };
 		77713950289EAE26002CE2EE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771394F289EAE26002CE2EE /* TimerView.swift */; };
 		77713951289EAE26002CE2EE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7771394F289EAE26002CE2EE /* TimerView.swift */; };
+		779E2CD128A4CA8200363BF1 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779E2CD028A4CA8200363BF1 /* StopwatchView.swift */; };
+		779E2CD228A4CA8200363BF1 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779E2CD028A4CA8200363BF1 /* StopwatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,7 @@
 		7771393E289EA33C002CE2EE /* LightWeightTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightWeightTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77713940289EA33C002CE2EE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		7771394F289EAE26002CE2EE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		779E2CD028A4CA8200363BF1 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +73,6 @@
 		773520A1289F5D7A00506E5C /* RingToneAudios */ = {
 			isa = PBXGroup;
 			children = (
-				77309EF6289F6DCC00111063 /* Sunshine.m4a */,
 			);
 			path = RingToneAudios;
 			sourceTree = "<group>";
@@ -89,9 +91,11 @@
 			children = (
 				77713931289EA33B002CE2EE /* EasyTimerApp.swift */,
 				77713932289EA33B002CE2EE /* ContentView.swift */,
+				779E2CD028A4CA8200363BF1 /* StopwatchView.swift */,
 				77352098289F574800506E5C /* BellView.swift */,
 				7735209B289F576B00506E5C /* RingTones.swift */,
 				7771394F289EAE26002CE2EE /* TimerView.swift */,
+				77309EF6289F6DCC00111063 /* Sunshine.m4a */,
 				773520A1289F5D7A00506E5C /* RingToneAudios */,
 				77713933289EA33C002CE2EE /* Assets.xcassets */,
 			);
@@ -217,6 +221,7 @@
 			files = (
 				77713950289EAE26002CE2EE /* TimerView.swift in Sources */,
 				7735209C289F576B00506E5C /* RingTones.swift in Sources */,
+				779E2CD128A4CA8200363BF1 /* StopwatchView.swift in Sources */,
 				77713943289EA33C002CE2EE /* ContentView.swift in Sources */,
 				77713941289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
 				77352099289F574800506E5C /* BellView.swift in Sources */,
@@ -229,6 +234,7 @@
 			files = (
 				77713951289EAE26002CE2EE /* TimerView.swift in Sources */,
 				7735209D289F576B00506E5C /* RingTones.swift in Sources */,
+				779E2CD228A4CA8200363BF1 /* StopwatchView.swift in Sources */,
 				77713944289EA33C002CE2EE /* ContentView.swift in Sources */,
 				77713942289EA33C002CE2EE /* EasyTimerApp.swift in Sources */,
 				7735209A289F574800506E5C /* BellView.swift in Sources */,
@@ -360,6 +366,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -390,6 +397,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
