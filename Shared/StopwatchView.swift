@@ -48,7 +48,7 @@ struct StopwatchView: View {
                         timePassed = 0
                     }
                 } label: {
-                    Label(recieveUpdate ? "Mark" : "Stop", systemImage: startTheTimer ? (recieveUpdate ? "bookmark.fill" : "stop.fill") : "bookmark")
+                    Label(recieveUpdate ? "Mark" : "Stop", systemImage: startTheTimer && recieveUpdate ? "bookmark.fill" : "stop.fill")
                 }.disabled(!startTheTimer).padding()
             }
             List(marks, id: \.1) { item in
