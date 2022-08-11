@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFoundation
+import SpriteKit
 
 enum RingTones: String, CaseIterable {
     case sunshine = "Sunshine"
@@ -23,14 +24,9 @@ enum Themes: String, CaseIterable {
 
 func play(for resource: RingTones) {
     if resource != .none {
-        let filePath = URL(fileURLWithPath: Bundle.main.path(forResource: resource.rawValue, ofType: "m4a")!)
-        do {
-            print("loading")
-            let ringTone = try AVAudioPlayer(contentsOf: filePath)
-            print("loaded")
-            ringTone.play()
-        } catch {
-            print("failure")
-        }
+        let AudioManager = SKScene()
+        let player = SKSpriteNode()
+        AudioManager.addChild(player)
+        player.run(.repeatForever(.playSoundFileNamed("Sunshine.m4a", waitForCompletion: true)))
     }
 }

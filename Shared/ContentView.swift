@@ -23,6 +23,9 @@ struct ContentView: View {
     @AppStorage("seconds") var seconds = UserDefaults.standard.integer(forKey: "time") % 60
     @AppStorage("minutes") var minutes = UserDefaults.standard.integer(forKey: "time") - (UserDefaults.standard.integer(forKey: "time") % 60) % 3600
     @AppStorage("hours") var hours = UserDefaults.standard.integer(forKey: "time") / 3600
+    var clockStep: Double {
+        return 0.001
+    }
     var body: some View {
         ZStack {
             TimerView(time: $timePassed, total: $time).padding()
@@ -84,6 +87,7 @@ struct ContentView: View {
                 }.padding()
                 Button {
                     print("Time \(time)")
+                    recieveUpdate = true
                     withAnimation {
                         if startTheTimer {
                             startTheTimer = false
@@ -122,9 +126,51 @@ struct ContentView: View {
                     }
                 }
             }
-        }.onReceive(timer) { publisher in
+        }
+#if os(macOS)
+.focusable()
+.touchBar {
+Button {
+    withAnimation {
+        if startTheTimer {
+            startTheTimer = false
+            timePassed = 0
+        } else {
+            print("schedule", seconds, minutes, hours)
+            time = seconds + minutes * 60 + hours * 3600
+            startTheTimer = true
+            stopped = false
+        }
+    }
+} label: {
+    Label(startTheTimer ? "Stop" : "Start", systemImage: startTheTimer ? "stop.fill" : "clock").foregroundColor(Color(theme.rawValue))
+}.buttonStyle(.plain)
+if startTheTimer {
+    Button {
+        withAnimation {
+            recieveUpdate.toggle()
+        }
+        if !startTheTimer {
+            stopped = false
+        }
+    } label: {
+        Label(recieveUpdate ? "Pause" : "Continue", systemImage: recieveUpdate ? "pause.fill" : "play.fill").foregroundColor(Color(theme.rawValue))
+    }.buttonStyle(.plain)
+}
+if Int(timePassed)
+    == time {
+    Button {
+        timePassed = 0
+        stopped = false
+    } label: {
+        Label("OK", systemImage: "clock.badge.checkmark.fill").foregroundColor(Color(theme.rawValue))
+    }.buttonStyle(.plain)
+}
+}
+#endif
+        .onReceive(timer) { publisher in
             if recieveUpdate && startTheTimer {
-                timePassed += 0.001
+                timePassed += clockStep
             }
             if startTheTimer {
                 if Int(timePassed) >= time {
@@ -160,6 +206,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .previewDevice("iPad Air (5th generation)")
+        ContentView()
+            .previewDevice("iPhone 13")
     }
 }
 
@@ -171,16 +219,3 @@ func clockTime(secs: Int) -> String {
     return "\(h):\(m):\(s)"
 }
 
-func toClock(secs: Int) -> (secs: Int, mins: Int, hours: Int) {
-    let h = secs / 3600
-    let m = secs % 3600 / 60
-    let s = secs % 36000 % 60
-    return (secs: s, mins: m, hours: h)
-}
-
-func minToClock(mins: Int) -> (mins: Int, hours: Int) {
-    let secs = mins * 60
-    let m = secs / 3600
-    let h = secs % 3600 / 60
-    return (mins: m, hours: h)
-}

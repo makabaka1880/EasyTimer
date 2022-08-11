@@ -24,7 +24,7 @@ struct PickerView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
-            /*
+            
             Picker("RingTone", selection: $ringtone) {
                 ForEach(RingTones.allCases, id: \.rawValue) { item in
                     Text(item.rawValue).tag(item)
@@ -35,7 +35,7 @@ struct PickerView: View {
             #else
             .pickerStyle(.wheel)
             #endif
-             */
+             
             Picker("Theme", selection: $theme) {
                 ForEach(Themes.allCases, id: \.rawValue) { item in
                     Text(item.rawValue).tag(item)
