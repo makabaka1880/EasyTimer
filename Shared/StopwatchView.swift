@@ -10,7 +10,7 @@ import SwiftUI
 struct StopwatchView: View {
     @State var timer = Timer.publish(every: UserDefaults.standard.double(forKey: "timeStepStopwatch"), on: .main, in: .common).autoconnect()
     @State var startTheTimer = false
-    @State var recieveUpdate = true
+    @State var recieveUpdate = false
     @AppStorage("timeStepStopwatch") var timestep: Double = 0.001
     @State var timePassed = 0.0
     @State var marks: [(Double, Int)] = []
@@ -22,7 +22,6 @@ struct StopwatchView: View {
                 .padding()
                 Spacer()
             }
-            Text("start \(startTheTimer ? "true" : "false") recieve \(recieveUpdate ? "true" : "false")")
             HStack {
                 Button {
                     if startTheTimer {
@@ -33,6 +32,7 @@ struct StopwatchView: View {
                         }
                     } else {
                         startTheTimer = true
+                        recieveUpdate = true
                     }
                 } label: {
                     Label(startTheTimer ? (recieveUpdate ? "Pause" : "Continue") : "Start", systemImage: startTheTimer ? (recieveUpdate ? "pause.fill" : "play.fill") : "stopwatch")
@@ -48,7 +48,7 @@ struct StopwatchView: View {
                         timePassed = 0
                     }
                 } label: {
-                    Label(recieveUpdate ? "Mark" : "Stop", systemImage: startTheTimer ? (recieveUpdate ? "bookmark.fill" : "stop.fill") : "bookmark")
+                    Label(recieveUpdate ? "Mark" : "Stop", systemImage: startTheTimer && recieveUpdate ? "bookmark.fill" : "stop.fill")
                 }.disabled(!startTheTimer).padding()
             }
             List(marks, id: \.1) { item in
